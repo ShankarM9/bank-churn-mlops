@@ -9,3 +9,4 @@ prefect
 fastapi
 uvicorn
 pytest
+pydantic
