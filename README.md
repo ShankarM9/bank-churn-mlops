@@ -6,7 +6,6 @@ The goal is to predict whether a bank customer will leave the bank (churn) based
 ## Tech Stack
 * **Tracking:** MLflow
 * **Data Versioning:** DVC
-* **Orchestration:** Prefect
 * **Deployment:** FastAPI
 * **CI/CD:** GitHub Actions
 
