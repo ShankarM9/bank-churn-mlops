@@ -1,0 +1,22 @@
+name: ML Pipeline CI
+on: [push]
+
+jobs:
+  run-pipeline:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
+        
+    - name: Install dependencies
+      run: pip install -r requirements.txt
+      
+    - name: Run Preprocessing & Training
+      run: |
+        # This simulates the full run in the cloud
+        python src/preprocess.py
+        python src/train.py
