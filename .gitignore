@@ -1,0 +1,7 @@
+.venv
+logs/
+models/
+plots/
+.env
+.DS_Store
+/play.ipynb
